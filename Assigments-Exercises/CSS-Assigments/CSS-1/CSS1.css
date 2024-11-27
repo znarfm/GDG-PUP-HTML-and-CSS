@@ -1,0 +1,16 @@
+h1 {
+    color: #1877f1;
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: grey;
+}
+
+.center {
+    text-align: center;
+    font-family: sans-serif;
+}
