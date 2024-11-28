@@ -85,7 +85,7 @@ Styled with step-by-step instructional comments for easy learning.
 3. **assets/images/**
 Stores images used in the project, such as the Google Developer Group logo and blog post thumbnails.
 
-##📱 Responsive Design
+## 📱 Responsive Design
 This project is fully responsive, optimized for:
 - Desktop: Clean and modern layout for wider screens.
 - Tablet: Adjusts layout to ensure readability and accessibility.
@@ -94,7 +94,7 @@ This project is fully responsive, optimized for:
 - Media Queries: Used to adapt layout for screen sizes.
 Flexbox: Ensures flexible alignment and spacing.
 
-##🎯 Project Goals
+## 🎯 Project Goals
 - Teach Semantic HTML: Understand the importance of proper structure in web development.
 - CSS Styling and Organization: Learn how to create modern, clean designs with reusable styles.
 - Responsive Design: Master techniques to make websites work across all devices.
