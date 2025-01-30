@@ -4,90 +4,168 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google-Themed Developer Hub</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div>
       <header>
-        <nav>
+        <nav class="navbar">
           <!-- Step 1.1: Create a div for the logo container -->
-          <!-- Step 1.2: Inside the div, add an image element for the logo and a paragraph for the brand name -->
-          <!-- Step 1.3: Create an unordered list for navigation links -->
-          <!-- Step 1.4: Inside the unordered list, include the navigation items: Home, Articles, Resources, Contact -->
+          <div class="navbar--container">
+            <!-- Step 1.2: Inside the div, add an image element for the logo and a paragraph for the brand name -->
+            <div class="logo-container">
+              <div class="logo-img-container">
+                <img src="assets/images/GDG-LOGO.png" alt="Google Developers Logo" />
+              </div>
+              <p>Developer Hub</p>
+            </div>
+            <!-- Step 1.3: Create an unordered list for navigation links -->
+            <ul class="nav-links-container">
+              <!-- Step 1.4: Inside the unordered list, include the navigation items: Home, Articles, Resources, Contact -->
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </nav>
-        <section>
+        <section class="header-banner-container">
           <!-- Step 2.1: Create a div for the container of the introductory part -->
-          <!-- Step 2.2: Inside the div, create a heading for the main title of the website, "Developer Hub" -->
-          <!-- Step 2.3: Inside the div, create a paragraph describing the website. Example: "Your journey to mastering web development starts here..." -->
+          <div class="header-banner">
+            <!-- Step 2.2: Inside the div, create a heading for the main title of the website, "Developer Hub" -->
+            <h1>Developer Hub</h1>
+            <!-- Step 2.3: Inside the div, create a paragraph describing the website. Example: "Your journey to mastering web development starts here..." -->
+            <p>Your journey to mastering web development starts here. Explore the latest articles, resources, and tutorials to enhance your skills and stay ahead in the tech world.</p>
+          </div>
         </section>
       </header>
 
-      <main>
-        <div>
+      <main class="main">
+        <div class="main-posts">
           <!-- Step 3.1: Create a div to contain the main blog posts -->
           <article>
             <!-- Step 3.2: Create an article element to group individual blog posts -->
-            <div>
+            <div class="post">
               <!-- Step 3.3: Create a div for a single blog post -->
-              <div>
+              <div class="post-image">
                 <!-- Step 3.4: Inside the blog post div, create a div for the "post-image" -->
                 <!-- Add an image for the blog post: src="assets/images/post1.jpg", alt="HTML & CSS Code Snippet" -->
+                <img src="assets/images/post1.jpg" alt="HTML & CSS Code Snippet" />
               </div>
-              <div>
+              <div class="post-content">
                 <!-- Step 3.5: Inside the blog post div, create a div for the "post-content" -->
                 <!-- Create an h2 for the blog post title -->
+                <h2>HTML & CSS Basics</h2>
                 <!-- Add a paragraph for the post metadata (e.g., "Posted on November 15, 2023 by Google Dev Team") -->
+                <p class="post-meta">Posted on November 15, 2023 by Google Dev Team</p>
                 <!-- Add a paragraph for the post summary (e.g., "Creating an effective website starts with solid HTML...") -->
+                <p>Creating an effective website starts with solid HTML and CSS foundations. This article dives into the essentials of structuring content with HTML and styling it with CSS.</p>
               </div>
             </div>
 
             <!-- Step 3.6: Using the instructions above, create two more blog posts -->
-            <div>
+            <div class="post">
               <!-- Include the following for this post: src="assets/images/post2.png", title="Building Dynamic UI with JavaScript", metadata="Posted on November 14, 2023 by Google Dev Team", summary="From interactive forms to dynamic content, JavaScript brings your website to life..." -->
+              <div class="post-image">
+                <img src="assets/images/post2.png" alt="Building Dynamic UI with JavaScript" />
+              </div>
+              <div class="post-content">
+                <h2>Building Dynamic UI with JavaScript</h2>
+                <p class="post-meta">Posted on November 14, 2023 by Google Dev Team</p>
+                <p>From interactive forms to dynamic content, JavaScript brings your website to life. Learn how to manipulate the DOM and create engaging user interfaces.</p>
+              </div>
             </div>
-            <div>
+            <div class="post">
               <!-- Include the following for this post: src="assets/images/post3.jpeg", title="Unlocking the Magic of CSS Flexbox", metadata="Posted on November 13, 2023 by Google Dev Team", summary="Learn how to create responsive and dynamic layouts with CSS Flexbox..." -->
+              <div class="post-image">
+                <img src="assets/images/post3.jpg" alt="Unlocking the Magic of CSS Flexbox" />
+              </div>
+              <div class="post-content">
+                <h2>Unlocking the Magic of CSS Flexbox</h2>
+                <p class="post-meta">Posted on November 13, 2023 by Google Dev Team</p>
+                <p>Learn how to create responsive and dynamic layouts with CSS Flexbox. This powerful layout module simplifies complex designs and ensures flexibility across devices.</p>
+              </div>
             </div>
           </article>
         </div>
 
-        <aside>
+        <aside class="sidebar">
           <!-- Step 4.1: Create an aside section for the sidebar -->
-          <div>
+          <div class="popular-posts-side">
             <!-- Step 4.2: Create a div for "popular-posts-side" -->
             <!-- Step 4.3: Add a subheading for the popular posts, e.g., "Top Picks" -->
+            <h3>Top Picks</h3>
             <!-- Step 4.4: Inside the "popular-posts-side", create multiple divs for popular posts -->
-            <div>
+            <div class="popular-post">
               <!-- For this post, include: src="assets/images/aside1.jpg", title="Getting Started with JavaScript", description="Explore the essentials of JavaScript for beginners..." -->
+              <img src="assets/images/aside1.jpg" alt="Getting Started with JavaScript" />
+              <div>
+                <h4>Getting Started with JavaScript</h4>
+                <p>Explore the essentials of JavaScript for beginners...</p>
+              </div>
             </div>
-            <div>
+            <div class="popular-post">
               <!-- For this post, include: src="assets/images/aside2.png", title="CSS Grid Mastery", description="Learn how to create flexible layouts with CSS Grid..." -->
+              <img src="assets/images/aside2.png" alt="CSS Grid Mastery" />
+              <div>
+                <h4>CSS Grid Mastery</h4>
+                <p>Learn how to create flexible layouts with CSS Grid...</p>
+              </div>
             </div>
-            <div>
+            <div class="popular-post">
               <!-- For this post, include: src="assets/images/aside3.jpg", title="Responsive Design Essentials", description="Tips and tricks to build responsive websites in 2024..." -->
+              <img src="assets/images/aside3.jpg" alt="Responsive Design Essentials" />
+              <div>
+                <h4>Responsive Design Essentials</h4>
+                <p>Tips and tricks to build responsive websites in 2024...</p>
+              </div>
             </div>
           </div>
 
-          <div>
+          <div class="social-side">
             <!-- Step 4.5: Create a div for "social-side" -->
             <!-- Add a subheading, e.g., "Follow Us" -->
-            <!-- Add anchor tags with social media images for Facebook, Twitter, Instagram, and LinkedIn -->
+            <h3>Follow Us</h3>
+            <!-- Add anchor tags with social media images for Facebook, Tiktok, Instagram, and LinkedIn -->
+            <div class="social-links">
+              <a href="https://www.facebook.com/gdg.pupmnl" target="_blank"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook" /></a>
+              <a href="https://www.tiktok.com/@gdg.pupmnl/" target="_blank"><img src="https://img.icons8.com/?size=100&id=118640&format=png&color=000000" alt="TikTok" /></a>
+              <a href="https://www.instagram.com/gdg.pupmnl" target="_blank"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram" /></a>
+              <a href="https://www.linkedin.com/company/gdgpup" target="_blank"><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn" /></a>
+            </div>
           </div>
         </aside>
       </main>
 
-      <footer>
-        <!-- Step 5.1: Create a div for the "footerBoxes" -->
-        <div>
-          <!-- Step 5.2: Inside the div, create individual "footerBox" divs for Privacy Policy, Terms of Service, and Support -->
-          <!-- For Privacy Policy: Add an h3, an hr, and a paragraph explaining the policy -->
-          <!-- For Terms of Service: Add an h3, an hr, and a paragraph explaining the terms -->
-          <!-- For Support: Add an h3, an hr, and a paragraph explaining how to contact support -->
+      <footer class="footer">
+        <div class="footer-content">
+          <!-- Step 5.1: Create a div for the "footerBoxes" -->
+          <div class="footer-box">
+            <!-- Step 5.2: Inside the div, create individual "footerBox" divs for Privacy Policy, Terms of Service, and Support -->
+            <!-- For Privacy Policy: Add an h3, an hr, and a paragraph explaining the policy -->
+            <h4>Privacy Policy</h4>
+            <hr />
+            <p>Our Privacy Policy outlines how we handle your data and protect your privacy when you use our services.</p>
+          </div>
+          <div class="footer-box">
+            <!-- For Terms of Service: Add an h3, an hr, and a paragraph explaining the terms -->
+            <h4>Terms of Service</h4>
+            <hr />
+            <p>Our Terms of Service describe the rules and regulations for using our website and services.</p>
+          </div>
+          <div class="footer-box">
+            <!-- For Support: Add an h3, an hr, and a paragraph explaining how to contact support -->
+            <h4>Support</h4>
+            <hr />
+            <p>Contact us for any questions or support related to our Developer Hub. We are here to help you.</p>
+          </div>
         </div>
-        <hr />
         <!-- Step 5.3: Add a horizontal line as a separator -->
-        <p>2023 Developer Hub | All Rights Reserved</p>
+        <hr />
         <!-- Step 5.4: Add a paragraph for the copyright notice -->
+        <p>© 2023 Developer Hub | All Rights Reserved</p>
       </footer>
     </div>
   </body>
